@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = +prompt("Nhập số lượng số :")
+    let value = [];
+    for (let i = 0; i < numbers; i++) {
+        let score;
+        do {
+            score = +prompt("Nhập số thứ " +(i +1))
+        }while (isNaN(score))
+        value.push(score)
+    }
+    document.write("Các số nguyên lớn hơn hoặc bằng 10 là: ");
+    for (let i = 0; i < value.length; i++) {
+        if (value[i] >= 10){
+            document.write(value[i] + " ");
+        }
+    }
+</script>
+</body>
+</html>
