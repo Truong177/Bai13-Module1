@@ -6,9 +6,17 @@
 </head>
 <body>
 <script>
-    let arr = [3, 5, 1, 8, -3, 7, 8];
-    arr.reverse().join();
-    document.write(arr)
+    let numbers = +prompt("Nhập số lượng số :")
+    let value = [];
+    for (let i = 0; i < numbers; i++) {
+        let score;
+        do {
+            score = +prompt("Nhập số thứ " +(i +1))
+        }while (isNaN(score))
+        value.push(score)
+    }
+    let arr = value.reverse().join();
+    document.write(arr);
 </script>
 </body>
 </html>
