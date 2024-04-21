@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = +prompt("Nhập số lượng số :");
+    let value = [];
+
+    for (let i = 0; i < numbers; i++) {
+        let score;
+        do {
+            score = +prompt("Nhập số thứ " + (i + 1));
+        } while (isNaN(score));
+        value.push(score);
+    }
+
+    let v = parseInt(prompt("Nhập số nguyên V "));
+    let check = false;
+
+    for (let i = 0; i < value.length; i++) {
+        if (value[i] === v) {
+            value.splice(i, 1);
+            check = true;
+        }
+    }
+    document.write(value);
+
+</script>
+</body>
+</html>
