@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkNumberReverse(a,b) {
+        let arr = [a , b]
+        if (a === b){
+            alert("Hai số trong hàm bằng nhau")
+        }else {
+            return  arr.reverse().join(" ");
+        }
+    }
+    let a = +prompt("Nhập số a ")
+    let b = +prompt("Nhập số b ")
+    let result = checkNumberReverse(a,b);
+    document.write("Hàm [" + a + ", " + b + "] đã đổi thành " +"[ " + result + " ]");
+</script>
+</body>
+</html>
