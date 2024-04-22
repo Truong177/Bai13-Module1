@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(a,b,c) {
+        let min ;
+        if(a < b && a < c){
+            min = a;
+        }else if(b < a && b < c){
+            min = b;
+        }else{
+            min = c;
+        }
+        return min;
+    }
+    let a = +prompt("Nhập số thứ nhất ");
+    let b = +prompt("Nhập số thứ hai ");
+    let c = +prompt("Nhập số thứ ba ")
+    document.write("Số bé nhất trong 3 số là "+check(a,b,c));
+</script>
+</body>
+</html>

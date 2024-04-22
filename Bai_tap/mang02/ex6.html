@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(a) {
+        if(a > 0 && Number.isInteger(a)){
+            return true;
+        }else {
+            return  false;
+        }
+    }
+    let a = +parseFloat(prompt("Nhập số a "));
+    document.write(check(a));
+</script>
+</body>
+</html>
